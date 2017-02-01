@@ -1,0 +1,10 @@
+if theme.baiducount
+    script.
+        var _hmt = _hmt || [];
+        (function () {
+            var countUrl = '#{theme.baiducount}';
+            var hm = document.createElement("script");
+            hm.src = countUrl;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
